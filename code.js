@@ -1,1 +1,3 @@
-throw new Error("This plugin template uses Typescript. Follow the instructions in `README.md` to generate `code.js`.")
+"use strict";
+figma.showUI(__html__);
+figma.ui.resize(500, 500);
