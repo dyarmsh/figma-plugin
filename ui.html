@@ -2073,13 +2073,8 @@
       const description = document.getElementById("description").value;
       const darkModeState = document.getElementById("dark-mode-on").checked;
       const imageVariant = document.querySelector('input[name="variantGroup"]:checked').value;
-  
-      console.log("Building my first plugin!")
-      console.log(username)
-      console.log(name)
-      console.log(description)
-      console.log(darkModeState)
-      console.log(imageVariant)
+
+      parent.postMessage({pluginMessage: {name, username, description, darkModeState, imageVariant}}, "*")
     }
   </script>
 </body>
