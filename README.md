@@ -1,40 +1,18 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# My First Figma Plugin!
+Built using TypeScript and HTML (with internal CSS and Javascript) with guidance from Figma's plugin development course, accessible [here](https://help.figma.com/hc/en-us/articles/4407531247639--BYFP-4-Building-Your-Plugin).
 
-  https://www.figma.com/plugin-docs/plugin-quickstart/
+### Useful Resources
+- Figma API Guide: https://www.figma.com/plugin-docs/
+- Figma API Reference: https://www.figma.com/plugin-docs/api/api-reference
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## Accessible here! *(Coming soon)*
+*I will put the link up here when it's published on Figma Community!*
 
-  https://nodejs.org/en/download/
+## Purpose
+Currently, this plugin is built for a specific template provided by Figma to modify the contents of components and access variants with ease. This plugin is more suited for specific use cases for internal organisational design workflows.
 
-Next, install TypeScript using the command:
-
-  npm install -g typescript
-
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
-
-  npm install --save-dev @figma/plugin-typings
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+## Future Improvements
+I would like to expand the concept of this plugin to fit any use case:
+- Any component can be selected from the file and its contents can be updated with ease whilst also accessing the various variants.
+- Using text generation AI to make as many instances of components as we wish, with contents filled with AI (to then expand into image generation too).
