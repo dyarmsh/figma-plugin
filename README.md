@@ -2,8 +2,8 @@
 Built using TypeScript and HTML (with internal CSS and Javascript) with guidance from Figma's plugin development course, accessible [here](https://help.figma.com/hc/en-us/articles/4407531247639--BYFP-4-Building-Your-Plugin).
 
 ### Useful Resources
-Figma API Guide: https://www.figma.com/plugin-docs/
-Figma API Reference: https://www.figma.com/plugin-docs/api/api-reference
+- Figma API Guide: https://www.figma.com/plugin-docs/
+- Figma API Reference: https://www.figma.com/plugin-docs/api/api-reference
 
 
 ## Accessible here! *(Coming soon)*
