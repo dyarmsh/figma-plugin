@@ -9,12 +9,6 @@ figma.ui.onmessage = async(pluginMessage) => {
   const postComponentSet = figma.root.findOne(node => node.type == "COMPONENT_SET" && node.name == "post") as ComponentSetNode;
   let selectedVariant;
 
-  console.log(pluginMessage.name);
-  console.log(pluginMessage.username);
-  console.log(pluginMessage.description);
-  console.log(pluginMessage.darkModeState);
-  console.log(pluginMessage.imageVariant);
-
   if (pluginMessage.darkModeState){
       switch (pluginMessage.imageVariant) {
         case "2":
@@ -41,7 +35,6 @@ figma.ui.onmessage = async(pluginMessage) => {
       }
   }
 
-
   const newPost = selectedVariant.createInstance();
 
   const templateName = newPost.findOne(node => node.name == "displayName" && node.type == "TEXT") as TextNode;
@@ -51,7 +44,6 @@ figma.ui.onmessage = async(pluginMessage) => {
   templateName.characters = pluginMessage.name;
   templateUsername.characters = pluginMessage.username;
   templateDescription.characters = pluginMessage.description;
-
 
   figma.closePlugin();
 }
